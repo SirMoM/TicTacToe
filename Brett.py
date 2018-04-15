@@ -59,7 +59,7 @@ class Brett:
         self.draw_board()
 
     def draw_board(self):
-        print("drew board")
+        #print("drew board")
         self.draw_Tic_Tac_Toe_Grid()
 
     def update(self):
@@ -74,7 +74,7 @@ class Brett:
 
         # Win ?
         print("Cross Win: ", self.check_Win_Crosses)
-        print("Cross Win: ", self.check_Win_Circles())
+        print("Circle Win: ", self.check_Win_Circles())
 
         # draw the board
         self.draw_board()
@@ -132,10 +132,8 @@ class Brett:
 
         pg.draw.line(self.screen, Utility.black, point_A_Line_B, point_B_Line_B, 5)
 
-        print("drew cross")
 
     def draw_circle(self, position):
-        print("drew cross")
         pg.draw.circle(self.screen, Utility.black, position, 40, 5)
 
     def draw_Player_Moves(self):
@@ -250,4 +248,5 @@ class Brett:
         self.turn = 0
 
     def show_win(self):
-        self.screen.blit(self.screen, self, self.mid_center)
+#        self.screen.blit(self.screen, self, self.mid_center)
+        pass
